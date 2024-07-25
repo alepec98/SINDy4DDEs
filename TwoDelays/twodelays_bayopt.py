@@ -99,9 +99,6 @@ def SINDy_error(param):
     return np.array(error).reshape(-1, 1)
 
 # Bayesian optimization
-i = 0
-
-
 bopt = BayOpt(target_function=SINDy_error, n_samples=1)
 results = bopt.run(max_iterations=num_of_it)
 minimum = results.minimum_location
