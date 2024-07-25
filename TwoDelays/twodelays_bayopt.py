@@ -118,10 +118,3 @@ X = np.array([x_train, x_train_del1, x_train_del2]).T
 model = ps.SINDy(feature_library=ps.PolynomialLibrary(degree=3))
 model.fit(X, t_train)
 model.print()
-
-count = 0
-err_plot = np.ones(num_of_it+1)
-err_vect = np.ones(num_of_it+1)
-delay1s = np.zeros(num_of_it+1)
-delay2s = np.zeros(num_of_it+1)
-
